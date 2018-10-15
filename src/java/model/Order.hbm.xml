@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-may-2018 8:47:00 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Order" table="order" catalog="clean_project" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="budget" class="model.Budget" fetch="select">
+            <column name="idBudget" not-null="true" />
+        </many-to-one>
+        <property name="date" type="date">
+            <column name="date" length="10" not-null="true" />
+        </property>
+        <property name="time" type="time">
+            <column name="time" length="8" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

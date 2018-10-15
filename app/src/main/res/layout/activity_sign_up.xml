@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20px"
+    android:padding="20px"
+    android:gravity="center"
+    tools:context="com.example.alum01.proyectolimpieza.SignUp">
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ecology" />
+
+    <TextView
+
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ASTROMueble"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorTitle"
+        android:layout_marginBottom="20px"/>
+
+    <EditText
+
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        android:gravity="center"/>
+
+    <EditText
+
+        android:id="@+id/txtLastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/lastname"
+        android:gravity="center"/>
+
+    <EditText
+
+        android:id="@+id/txtMovil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/movil"
+        android:gravity="center"/>
+
+    <EditText
+
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/phone"
+        android:gravity="center"/>
+
+    <EditText
+
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/aceptar"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

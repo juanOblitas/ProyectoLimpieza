@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-may-2018 8:47:00 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.BillingData" table="billing_data" catalog="clean_project" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="user" class="model.User" fetch="select">
+            <column name="idUser" not-null="true" />
+        </many-to-one>
+        <property name="dni" type="string">
+            <column name="dni" length="9" not-null="true" unique="true" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" length="20" not-null="true" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="20" not-null="true" />
+        </property>
+        <property name="province" type="string">
+            <column name="province" length="20" not-null="true" />
+        </property>
+        <property name="town" type="string">
+            <column name="town" length="20" not-null="true" />
+        </property>
+        <property name="cp" type="string">
+            <column name="cp" length="5" not-null="true" />
+        </property>
+        <property name="adress" type="string">
+            <column name="adress" length="40" not-null="true" />
+        </property>
+        <property name="number" type="string">
+            <column name="number" length="3" not-null="true" />
+        </property>
+        <property name="stairs" type="string">
+            <column name="stairs" length="1" not-null="true" />
+        </property>
+        <property name="floor" type="string">
+            <column name="floor" length="2" not-null="true" />
+        </property>
+        <property name="door" type="string">
+            <column name="door" length="1" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

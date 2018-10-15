@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ProyectoLimpieza</string>
+    <string name="presupuesto">Presupuesto</string>
+    <string name="descripcion">Somos una empresa dedicada a la limpieza y desinfección de muebles, alfombras y colchones, con equipos alemanes y personal especializado.</string>
+    <string name="email">email</string>
+    <string name="aceptar">Log in</string>
+    <string name="web"><a href="https://www.google.es/">Web</a></string>
+    <string name="register">Registrate</string>
+    <string name="title">ASTROMueble</string>
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellido</string>
+    <string name="movil">movil</string>
+    <string name="phone">telefono</string>
+    <string name="password">**********</string>
+    <string name="errorcam">Error al abrir la camara</string>
+</resources>
